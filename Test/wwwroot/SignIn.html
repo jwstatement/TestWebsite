@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+   
+    <meta charset="utf-8" />
+    <title>Log in </title>
+    <style>
+        body {
+            /*background-image: url('images/Metallic.jpg');*/
+            background-size: auto 100%;
+        }
+
+        label {
+            display: block;
+            color: #999;
+        }
+
+        .cf:before,
+        .cf:after {
+            content: "";
+            display: table;
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        .cf {
+            *zoom: 1;
+        }
+
+        :focus {
+            outline: 0;
+        }
+
+        .loginform {
+            width: 410px;
+            margin: 375px auto;
+            padding: 25px;
+        }
+
+            .loginform ul {
+                padding: 0;
+                margin: 0;
+            }
+
+            .loginform li {
+                display: inline;
+                float: none;
+            }
+
+            .loginform input:not([type=submit]) {
+                padding: 5px;
+                margin-right: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-radius: 3px;
+                box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+            }
+
+            .loginform input[type=submit] {
+                /*border: 1px solid rgba(0, 0, 0, 0.3);
+                /*background: #64c8ef; /* Old browsers */
+                /*background: -moz-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */
+                /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#64c8ef), color-stop(100%,#00a2e2)); /* Chrome,Safari4+ */
+                /*background: -webkit-linear-gradient(top, #64c8ef 0%,#00a2e2 100%); /* Chrome10+,Safari5.1+ */
+                /*background: -o-linear-gradient(top, #64c8ef 0%,#00a2e2 100%); /* Opera 11.10+ */
+                /*background: -ms-linear-gradient(top, #64c8ef 0%,#00a2e2 100%); /* IE10+ */
+                /*background: linear-gradient(to bottom, #64c8ef 0%,#00a2e2 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 ); /* IE6-9 */
+                color: #fff;
+                padding: 5px 15px;
+                margin-right: 0;
+                margin-top: 15px;
+                border-radius: 3px;
+                text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+                margin-bottom: 10%;
+            }
+
+
+
+
+
+
+
+
+        .headerform ul {
+            
+
+        
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        }
+
+        
+    </style>
+
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="368852257287-85ora6fgt14k5pfaq8glqjq177rtet5e.apps.googleusercontent.com">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+        <section class="loginform cf" >
+
+            <form>
+                <ul>
+                    <li>
+                        <a href="#" style="color:yellow; font-size:150%;" onclick="SignInHelp();">Trouble signing in?</a>
+                        <script>
+                            function SignInHelp() {
+
+                                window.alert("Press Ctrl + H or go to your history, click 'clear browsing data', and make sure ONLY the 3rd and 4th boxes are checked, and the drop down box says 'beginning of time' then try again.");
+                            };
+
+                        </script>
+                    </li>
+                </ul>
+            </form>
+            <form>
+                <ul>
+                    <li>
+                        <div class="g-signin2" data-onsuccess="onSignIn" style="margin-bottom:10%; margin-top:10%;"></div>
+                        <script>
+
+                            function onSignIn(googleUser) {
+                                var profile = googleUser.getBasicProfile();
+                                var name = profile.
+                                var image = profile.getImageUrl();
+                                var email = profile.getEmail();
+                                var id = profile.getId();
+                            };
+
+                            function insert() {
+                                document.getElementById('email').InnerHTML = email;
+                            };
+
+                            
+                            
+
+                        </script>
+                        <h1 onload="insert()" id="email"></h1>
+
+
+
+
+
+
+
+                    </li>
+                </ul>
+            </form>
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+            <form>
+
+                <ul>
+                    <li>
+                        <a href="#" onclick="signOut();">
+                            <img border="0" alt="Surveys" src="images/SignOut.png" style="width:29.3%;  margin-bottom:10%;">
+                        </a>
+                        <script>
+
+                            function signOut() {
+                                var auth2 = gapi.auth2.getAuthInstance();
+                                auth2.signOut().then(function () {
+                                    console.log('User signed out.');
+
+
+                                });
+                            }
+
+                        </script>
+                    </li>
+                </ul>
+
+            </form>
+            <div id="custom-tag"> </div>
+            <form>
+
+                <a href="StudiesHome.html"><img src="images/button-Continue.jpg" style="width:29.3%"></a>
+
+
+
+
+            </form>
+
+
+
+
+        </section>
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>

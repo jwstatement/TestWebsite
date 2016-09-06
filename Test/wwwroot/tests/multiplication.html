@@ -1,0 +1,301 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        .b {
+            width: 5%;
+            padding: 1%;
+            font: bold;
+        }
+
+        .bEnd {
+            width: 5%;
+            padding: 1%;
+            font: bold;
+            margin-bottom: 8%;
+        }
+
+        .h1 {
+            margin-bottom: 2%;
+            font: unset;
+            font-size: 150%;
+        }
+
+        .img {
+            width: 20%;
+            margin-bottom: auto;
+        }
+
+        .links {
+            margin-top: 0%;
+            color: deepskyblue;
+            font-size: 300%;
+            margin-left: 3%;
+        }
+
+
+        body {
+            background-color: mediumvioletred;
+            font-size: 150%;
+            margin-top: 3%;
+            margin-left: 3%;
+        }
+        /*
+                label {
+                    display: block;
+                    color: #999;
+                }
+
+                .cf:before,
+                .cf:after {
+                    content: "";
+                    display: table;
+                }
+
+                .cf:after {
+                    clear: both;
+                }
+
+                .cf {
+                    *zoom: 1;
+                }
+
+                :focus {
+                    outline: 0;
+                }
+
+                .loginform {
+                    width: 410px;
+                    margin: 375px auto;
+                    padding: 25px;
+                }
+                */
+
+        .loginform ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .loginform li {
+            display: inline;
+            float: none;
+        }
+        /*
+                    .loginform input:not([type=submit]) {
+                        padding: 5px;
+                        margin-right: 10px;
+                        border: 1px solid rgba(0, 0, 0, 0.3);
+                        border-radius: 3px;
+                        box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5); */
+        }
+
+        .loginform input[type=submit] {
+            /*border: 1px solid rgba(0, 0, 0, 0.3);
+                        /*background: #64c8ef; /* Old browsers */
+            /*background: -moz-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */
+            /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#64c8ef), color-stop(100%,#00a2e2)); /* Chrome,Safari4+ */
+            /*background: -webkit-linear-gradient(top, #64c8ef 0%,#00a2e2 100%); /* Chrome10+,Safari5.1+ */
+            /*background: -o-linear-gradient(top, #64c8ef 0%,#00a2e2 100%); /* Opera 11.10+ */
+            /*background: -ms-linear-gradient(top, #64c8ef 0%,#00a2e2 100%); /* IE10+ */
+            /*background: linear-gradient(to bottom, #64c8ef 0%,#00a2e2 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 ); /* IE6-9 */
+            color: #fff;
+            padding: 5px 15px;
+            margin-right: 0;
+            margin-top: 15px;
+            border-radius: 3px;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10%;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title>Multiplication</title>
+</head>
+<body>
+
+    <section class="loginform cf">
+        <h1 class="h1"> 10*10 =</h1>
+
+
+        <button class="b" onclick="Right()">100</button><br />
+        <button class="b" onclick="Wrong()">110</button><br />
+        <button class="b" onclick="Wrong()">20</button><br />
+        <button class="bEnd" onclick="Wrong()">1000</button><br />
+
+
+
+
+
+
+        <script>
+            function Right() {
+                window.alert("Correct!");
+            }
+        </script>
+
+
+
+
+        <script>
+            function Wrong() {
+                window.alert("Wrong :(");
+            }
+        </script>
+
+
+
+
+
+        <h1 class="h1"> 5*7 =</h1>
+
+
+        <button class="b" onclick="Wrong()">12</button><br />
+        <button class="b" onclick="Wrong()">57</button><br />
+        <button class="b" onclick="Right()">35</button><br />
+        <button class="bEnd" onclick="Wrong()">42</button><br />
+
+
+
+        <script>
+            function Right() {
+                window.alert("Correct!");
+            }
+        </script>
+
+
+
+
+        <script>
+            function Wrong() {
+                window.alert("Wrong :(");
+            }
+        </script>
+
+
+
+
+
+
+
+
+        <h1 class="h1"> 12*11 =</h1>
+
+        <button class="b" onclick="Wrong()">144</button><br />
+        <button class="b" onclick="Wrong()">121</button><br />
+        <button class="b" onclick="Wrong()">100</button><br />
+        <button class="bEnd" onclick="Right()">132</button><br />
+
+
+
+        <script>
+            function Right() {
+                window.alert("Correct!");
+            }
+        </script>
+
+
+
+
+        <script>
+            function Wrong() {
+                window.alert("Wrong :(");
+            }
+        </script>
+
+
+
+
+        <h1 class="h1"> 13*8 =</h1>
+
+        <button class="b" onclick="Wrong()">112</button><br />
+        <button class="b" onclick="Wrong()">117</button><br />
+        <button class="b" onclick="wrong()">138</button><br />
+        <button class="bEnd" onclick="Right()">104</button><br />
+
+
+
+        <script>
+            function Right() {
+                window.alert("Correct!");
+            }
+        </script>
+
+
+
+
+        <script>
+            function Wrong() {
+                window.alert("Wrong :(");
+            }
+        </script>
+
+
+
+
+
+
+        <h1 class="h1"> 99*99 =</h1>
+
+
+        <button class="b" onclick="Right()">9801</button><br />
+        <button class="b" onclick="Wrong()">9800</button><br />
+        <button class="b" onclick="Wrong()">9900</button><br />
+        <button class="bEnd" onclick="Wrong()">9809</button><br />
+
+
+
+        <script>
+            function Right() {
+                window.alert("Correct!");
+            }
+        </script>
+
+
+
+        <script>
+            function Wrong() {
+                window.alert("Wrong :(");
+            }
+        </script>
+
+
+
+
+
+
+
+
+        <h1 class="h1"> 17*3 =</h1>
+
+
+        <button class="b" onclick="Right()">51</button><br />
+        <button class="b" onclick="Wrong()">26</button><br />
+        <button class="b" onclick="Wrong()">173</button><br />
+        <button class="bEnd" onclick="Wrong()">39</button><br />
+
+
+
+        <script>
+            function Right() {
+                window.alert("Correct!");
+            }
+        </script>
+
+
+
+
+        <script>
+            function Wrong() {
+                window.alert("Wrong :(");
+            }
+        </script>
+
+
+
+
+    </section>
+
+</body>
+</html>
